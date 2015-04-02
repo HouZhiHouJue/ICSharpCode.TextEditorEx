@@ -99,6 +99,28 @@ http://minisqlquery.codeplex.com/license
         <Key word="USER" />
         <Key word="VIEW" />
       </KeyWords>
+      <KeyWords name="DataTypes"
+               bold="false"
+               italic="false"
+               color="Blue">
+        <Key word="CHAR" />
+        <Key word="NCHAR" />
+        <Key word="VARCHAR2" />
+        <Key word="VARCHAR" />
+        <Key word="NVARCHAR2" />
+        <Key word="INTEGER" />
+        <Key word="NUMBER" />
+        <Key word="BINARY_FLOAT" />
+        <Key word="BINARY_DOUBLE" />
+        <Key word="DATE" />
+        <Key word="TIMESTAMP" />
+        <Key word="CLOB" />
+        <Key word="NCLOB" />
+        <Key word="BLOB" />
+        <Key word="BFILE" />
+        <Key word="LONG" />
+        <Key word="RAW" />
+      </KeyWords>
       <KeyWords name="SqlKeywordsNormal"
                 bold="false"
                 italic="false"

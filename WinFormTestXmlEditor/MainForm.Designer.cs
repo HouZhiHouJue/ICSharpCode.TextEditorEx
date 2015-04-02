@@ -57,11 +57,11 @@ namespace WinFormTestXmlEditor
             // cmbHighlight
             // 
             this.cmbHighlight.FormattingEnabled = true;
-            this.cmbHighlight.Items.AddRange(new object[] {
-            "XML",
-            "Lua",
-            "SQL",
-            "CSharp"});
+            //this.cmbHighlight.Items.AddRange(new object[] {
+            //"XML",
+            //"Lua",
+            //"SQL",
+            //"CSharp"});
             this.cmbHighlight.Location = new System.Drawing.Point(636, 35);
             this.cmbHighlight.Name = "cmbHighlight";
             this.cmbHighlight.Size = new System.Drawing.Size(121, 21);

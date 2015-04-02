@@ -279,7 +279,6 @@
     </EmbeddedResource>
     <None Include="ICSharpCode.TextEditorEx.nuspec" />
     <None Include="Migrated rules for ICSharpCode.TextEditor.ruleset" />
-    <None Include="packages.config" />
     <None Include="Resources\ICSharpCode.TextEditor.snk" />
     <EmbeddedResource Include="Resources\TextEditorControl.bmp" />
     <EmbeddedResource Include="Resources\Java-Mode.xshd" />
@@ -298,11 +297,6 @@
     <Compile Include="Src\Document\HighlightingStrategy\SpanStack.cs" />
     <Compile Include="Src\Util\WeakCollection.cs" />
     <EmbeddedResource Include="Resources\Patch-Mode.xshd" />
-    <None Include="_CreateNewNuGetPackage\Config.ps1" />
-    <None Include="_CreateNewNuGetPackage\DoNotModify\CreateNuGetPackage.ps1" />
-    <None Include="_CreateNewNuGetPackage\DoNotModify\New-NuGetPackage.ps1" />
-    <None Include="_CreateNewNuGetPackage\DoNotModify\UploadNuGetPackage.ps1" />
-    <None Include="_CreateNewNuGetPackage\RunMeToUploadNuGetPackage.cmd" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -338,7 +332,6 @@
     <None Include="Resources\sc_redo.png" />
     <None Include="Resources\sc_paste.png" />
     <None Include="Resources\sc_cut.png" />
-    <None Include="_CreateNewNuGetPackage\DoNotModify\NuGet.exe" />
     <EmbeddedResource Include="Resources\Lua-Mode.xshd" />
     <EmbeddedResource Include="Resources\SQL-Mode.xshd" />
   </ItemGroup>
@@ -351,9 +344,7 @@
     <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
   </Target>
   <PropertyGroup>
-    <PostBuildEvent>REM Create a NuGet package for this project and place the .nupkg file in the project's output directory.
-REM If you see this in Visual Studio's Error List window, check the Output window's Build tab for the actual error.
-ECHO Creating NuGet package in Post-Build event...
-PowerShell -NoProfile -ExecutionPolicy Bypass -Command "&amp; '$(ProjectDir)_CreateNewNuGetPackage\DoNotModify\CreateNuGetPackage.ps1' -ProjectFilePath '$(ProjectPath)' -OutputDirectory '$(TargetDir)' -BuildConfiguration '$(ConfigurationName)' -BuildPlatform '$(PlatformName)'"</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>

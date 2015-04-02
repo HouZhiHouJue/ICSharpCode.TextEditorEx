@@ -174,8 +174,13 @@
 				<Key word = "uint" />
 				<Key word = "ushort" />
 				<Key word = "ulong" />
+        <Key word = "DateTime" />
 			</KeyWords>
-			
+      <KeyWords name = "EntityFramework" bold="false" italic="false" color="Green">
+        <Key word = "Table" />
+        <Key word = "Key" />
+        <Key word = "Column" />
+      </KeyWords>
 			<KeyWords name = "ReferenceTypes" bold="false" italic="false" color="Red">
 				<Key word = "class" />
 				<Key word = "interface" />

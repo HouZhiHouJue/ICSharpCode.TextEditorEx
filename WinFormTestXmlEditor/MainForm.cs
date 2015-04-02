@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using ICSharpCode.TextEditor.Document;
+using System.Windows.Forms;
 
 namespace WinFormTestXmlEditor
 {
@@ -7,7 +8,17 @@ namespace WinFormTestXmlEditor
         public MainForm()
         {
             InitializeComponent();
-
+            foreach (string highlighting in HighlightingManager.Manager.HighlightingDefinitions.Keys)
+            {
+                cmbHighlight.Items.Add(highlighting);
+            }
+            cmbHighlight.Items.Add("XML");
+            cmbHighlight.Items.Add("SQL");
+            cmbHighlight.Items.Add("Lua");
+            //"XML",
+            //"Lua",
+            //"SQL",
+            //"CSharp"
             //textEditorControl1.SetHighlighting("XML");
             //textEditorControl1.SetFoldingStrategy("XML");
             //textEditorControl1.Font = new Font("Courier New", 8.25f, FontStyle.Regular);
